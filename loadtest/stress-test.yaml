@@ -1,0 +1,8 @@
+testName: "GiftOfTheGivers-StressTest"
+engineInstances: 2
+testPlan: "loadtest/GiftOfTheGivers-StressTest.jmx"
+description: "Stress test with 500 concurrent users for 15 minutes"
+failureCriteria:
+  - avg(response_time_ms) > 5000
+  - percentage(error) > 10
+  - avg(requests_per_sec) < 20

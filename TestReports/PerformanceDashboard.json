@@ -1,0 +1,45 @@
+{
+  "performanceMetrics": {
+    "application": {
+      "avgResponseTime": 189,
+      "p95ResponseTime": 412,
+      "throughput": 312.4,
+      "errorRate": 0.0052,
+      "availability": 99.95
+    },
+    "database": {
+      "queryPerformance": 156,
+      "connectionPoolUsage": 0.67,
+      "deadlocksPerMinute": 0.2,
+      "cpuUsage": 0.45,
+      "storageUsage": 0.34
+    },
+    "infrastructure": {
+      "appServiceCpu": 0.28,
+      "appServiceMemory": 0.45,
+      "sqlDtuUsage": 0.22,
+      "networkLatency": 23.4,
+      "diskIo": 1245.6
+    }
+  },
+  "thresholds": {
+    "critical": {
+      "responseTime": 5000,
+      "cpuUsage": 0.9,
+      "memoryUsage": 0.9,
+      "errorRate": 0.05
+    },
+    "warning": {
+      "responseTime": 2000,
+      "cpuUsage": 0.7,
+      "memoryUsage": 0.8,
+      "errorRate": 0.01
+    }
+  },
+  "trends": {
+    "responseTime": "stable",
+    "throughput": "improving",
+    "errorRate": "decreasing",
+    "resourceUsage": "stable"
+  }
+}

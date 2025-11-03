@@ -1,0 +1,8 @@
+testName: "GiftOfTheGivers-SmokeTest"
+engineInstances: 1
+testPlan: "loadtest/GiftOfTheGivers-SmokeTest.jmx"
+description: "Smoke test with 10 concurrent users for 5 minutes"
+failureCriteria:
+  - avg(response_time_ms) > 2000
+  - percentage(error) > 5
+  - avg(requests_per_sec) < 10
